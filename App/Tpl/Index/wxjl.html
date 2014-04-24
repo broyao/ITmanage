@@ -90,7 +90,7 @@
 				   dataType:"json",
 				   success: function(data){
 					   	if (data.errorMsg){
-							alert(data.errorMsg);    
+							$.message.alert('错误',data.errorMsg);    
  						}else{
 							$('#wxjl_dlg').dialog('close');	
 							$('#wxjl_dg').datagrid('reload');
